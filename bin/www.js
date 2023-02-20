@@ -86,5 +86,8 @@ function onListening() {
   var bind = typeof addr === 'string'
     ? 'pipe ' + addr
     : 'port ' + addr.port;
-  debug('Listening on ' + bind);
+ // debug('🌟🌟Listening on ' + bind+'🌟🌟');
+ // debug(addr);
+  debug(`🌟🌟Listening on ${process.env.APP_URL}:${addr.port}`+'🌟🌟')
+  //console.log("🎃Server listening on port 3000...");
 }
