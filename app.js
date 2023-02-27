@@ -1,8 +1,14 @@
+//Helps to handle http errors
 var createError = require('http-errors');
+//Import the Express Library
 var express = require('express');
+//Is a Core-Node library to 
 var path = require('path');
+//Helps to parse client cookies
 var cookieParser = require('cookie-parser');
+//Helps to parse client cookies
 var logger = require('morgan');
+
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
