@@ -1,0 +1,10 @@
+{
+  "presets": [
+    [
+       "@babel/preset-env",{
+        // Los tarhets son las plataformas donde se ejecurtara el codigo final
+            "targets" : { "node" : "current" }
+        }
+    ]
+  ]  
+}
