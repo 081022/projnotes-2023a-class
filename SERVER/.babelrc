@@ -1,10 +1,26 @@
 {
   "presets": [
     [
+      "minfy",{
+        "builtIns": false,
+        "evaluate": false,
+        "mangle":false
+      }
+    ],
+    [
        "@babel/preset-env",{
         // Los tarhets son las plataformas donde se ejecurtara el codigo final
             "targets" : { "node" : "current" }
         }
     ]
-  ]  
+  ],
+  "plugins":{
+    [
+    "root": [",/"],
+    "alias": {
+      "@server" : "./server"
+    }
+  }
+]
+]
 }
